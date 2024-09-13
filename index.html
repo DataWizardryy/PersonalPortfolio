@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunde Balogun's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include FontAwesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -18,6 +17,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -50,7 +50,7 @@
 
     <section id="projects">
         <h2>Projects</h2>
-    
+
         <!-- Project 1: Interactive E-commerce Dashboard -->
         <div class="project">
             <a href="#" onclick="openModal('modal1')">Interactive E-commerce Dashboard</a>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 3: HairByFlakky Booking System -->
         <div class="project">
             <a href="#" onclick="openModal('modal3')">HairByFlakky Booking System</a>
@@ -85,67 +85,29 @@
                     <span class="close" onclick="closeModal('modal3')">&times;</span>
                     <h2>HairByFlakky Booking System</h2>
                     <p>A booking system for a hairdressing salon where customers can book hairstyles and the owner receives booking details via mobile. Built streamlit and plotly.</p>
-                    <a href="https://github.com/DataWizardryy/hairbyflakky-salon-booking.git" target="_blank">View on GitHub</a>
+                    <a href="https://hairbyflakky-salon-booking-app.streamlit.app/" target="_blank">View the Web App</a>
                 </div>
             </div>
         </div>
-    
-            
-        <!-- Project 5: PLP Assignment 1 - Basic HTML Template -->
-        <div class="project">
-            <a href="#" onclick="openModal('modal2')">PLP Assignment 1 - Basic HTML Template</a>
-            <div id="modal2" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                    <h2>PLP Assignment 1 - Basic HTML Template</h2>
-                    <p>This assignment involves building a basic HTML template that includes headings, paragraphs, lists, images, and links.</p>
-                    <a href="https://github.com/PLP-WebTechnologies/introduction-to-html-DataWizardryy.git" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Project 6: PLP Assignment 2 - CSS Styling -->
-        <div class="project">
-            <a href="#" onclick="openModal('modal3')">PLP Assignment 2 - CSS Styling</a>
-            <div id="modal3" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal3')">&times;</span>
-                    <h2>PLP Assignment 2 - CSS Styling</h2>
-                    <p>This assignment demonstrates basic and advanced CSS styling for webpage layout, fonts, colors, and more.</p>
-                    <a href="https://github.com/DataWizardryy/PLP_CSS_Styling" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    
 
-    
-        <!-- Database Assignments -->
-        <div class="project">
-            <a href="#" onclick="openModal('modal5')">PLP Assignment 4 - Database Design</a>
-            <div id="modal5" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal5')">&times;</span>
-                    <h2>PLP Assignment 4 - Database Design</h2>
-                    <p>This assignment involves designing a database schema for a simple e-commerce system, showcasing skills in database normalization and ERD creation.</p>
-                    <a href="https://github.com/PLP-Database-Design/week-1-assignment-DataWizardryy.git" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="project">
-            <a href="#" onclick="openModal('modal6')">PLP Assignment 5 - SQL Queries</a>
-            <div id="modal6" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal6')">&times;</span>
-                    <h2>PLP Assignment 5 - SQL Queries</h2>
-                    <p>This project showcases a collection of SQL queries written to retrieve, manipulate, and analyze data from a relational database system.</p>
-                    <a href="https://github.com/PLP-Database-Design/week-2-assignment-DataWizardryy.git" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    
     </section>
-    
+
+    <!-- Recommendations Section with Form -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+            <!-- Recommendations will be displayed dynamically here -->
+        </div>
+        
+        <h3>Submit a Recommendation</h3>
+        <form id="recommendation-form">
+            <input type="text" id="name" placeholder="Your Name" required><br><br>
+            <input type="text" id="position" placeholder="Your Position" required><br><br>
+            <input type="text" id="company" placeholder="Your Company" required><br><br>
+            <textarea id="recommendation" placeholder="Your Recommendation" required></textarea><br><br>
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -157,35 +119,18 @@
         </form>
     </section>
 
-    <section id="recommendations">
-    <h2>Give Me a Recommendation</h2>
-    <p>If you’ve worked with me and would like to leave a recommendation, I’d love to hear from you!</p>
-    <form id="recommendation-form" action="/submit_recommendation" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required><br><br>
-        <input type="email" name="email" placeholder="Your Email" required><br><br>
-        <input type="text" name="position" placeholder="Your Position" required><br><br>
-        <input type="text" name="company" placeholder="Your Company" required><br><br>
-        <textarea name="recommendation" placeholder="Your Recommendation" required></textarea><br><br>
-        <button type="submit">Submit Recommendation</button>
-    </form>
-</section>
-
-    
-
     <footer>
         <p>© 2024 Tunde Balogun. All rights reserved.</p>
         <p>Connect with me:
             <a href="https://www.linkedin.com/in/tunde-balogun-70857694/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-
             <a href="https://github.com/DataWizardryy" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
         </p>
     </footer>
 
-    <!-- Include external JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
