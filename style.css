@@ -150,3 +150,23 @@ footer a {
 footer a:hover {
   color: white;
 }
+
+.project {
+  display: inline-block;
+  width: 48%;
+  margin: 1%;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+  .modal-content {
+      width: 90%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
